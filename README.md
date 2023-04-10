@@ -16,7 +16,8 @@ Parse your Favorite Channels New Videos Titles Manually to your Notification Sys
  
  ## How it Works
  The script makes a GET request to each channel's videos page and extracts the title and URL of the latest video. It then checks if the video title is already in a CSV file. If the video title is not in the CSV file, it sends a desktop notification with the video title and URL. The CSV file is used to keep track of which videos have already been viewed.
- Also when you right click on the notification, it hyperlinks to the video URL.
+ 
+ `Also when you right click on the notification, it hyperlinks to the video URL`
  
  ## Note
 Please note that Youtube does not officially support this type of parsing and may take action against accounts that use it. Use at your own risk.
