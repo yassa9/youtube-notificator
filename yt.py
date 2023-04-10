@@ -6,11 +6,11 @@ import subprocess
 import re
 import csv
 
-# Define the paths
+# Define your own paths
 csv_path = "/home/yassa/.scripts/yt/csvpy.csv"
 ip = "/home/yassa/.scripts/yt/icons" 
 
-# List of channel usernames to check
+# List your favorite channel usernames to check, also of you want, assign logos or profile images
 UserNames = ['Sport360Arabiya','erza3ma3serry','DOCTOR-CHESS','salahgooda','Pharmastan','Saba7oKorah','Badr3','MZRecordsTopMusicAzerbaijan','bigthink']
 IconPaths = ['loay.jpg','erz3.jpg','nofal.ico','salah.jpg','pharma.png','sba7o.jpg','badr.jpg','music.jpg','bigthink.jpg']
 
