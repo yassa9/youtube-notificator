@@ -1,2 +1,2 @@
 # youtube-notifications-parser
-Parse your favorite channels new videos titles
+Parse your Favorite Channels New Videos Titles to your Notification System
