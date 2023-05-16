@@ -6,13 +6,13 @@ import subprocess
 import re
 import csv
 
-# Define your own paths
+# Define the paths
 csv_path = "/home/yassa/.scripts/yt/csvpy.csv"
 ip = "/home/yassa/.scripts/yt/icons" 
 
-# List your favorite channel usernames to check, also of you want, assign logos or profile images
-UserNames = ['Sport360Arabiya','erza3ma3serry','DOCTOR-CHESS','salahgooda','Pharmastan','Saba7oKorah','Badr3','MZRecordsTopMusicAzerbaijan','bigthink']
-IconPaths = ['loay.jpg','erz3.jpg','nofal.ico','salah.jpg','pharma.png','sba7o.jpg','badr.jpg','music.jpg','bigthink.jpg']
+# List of channel usernames to check
+UserNames = ['Sport360Arabiya','erza3ma3serry','DOCTOR-CHESS','Ne3rafChannel','salahgooda','Pharmastan','Saba7oKorah','Badr3','MZRecordsTopMusicAzerbaijan'] # ,'bigthink'
+IconPaths = ['loay.jpg','erz3.jpg','nofal.ico','na3rf.png','salah.jpg','pharma.png','sba7o.jpg','badr.jpg','music.jpg'] # ,'bigthink.jpg'
 
 new_videos_added = False  # Flag to check if any new videos were added
 
@@ -47,7 +47,7 @@ for username, icon in zip(UserNames, IconPaths):
 
         link = f"/home/yassa/.scripts/yt/icons/{icon}"
         message = f"<span foreground='red' font='Monospace 1'>https://www.youtube.com/watch?v={clean_url}</span>"
-        subprocess.run(["notify-send", title_text, message, "--icon", link, "-h", f"string:x-canonical-private-synchronous:video_id={clean_url}"], check=True)
+        subprocess.run(["notify-send", title_text, message, "--icon", link, "-h", f"string:x-canonical-private-synchronous:video_id={clean_url}", "-t", "0"], check=True)
         new_videos_added = True
 
 if not new_videos_added:
