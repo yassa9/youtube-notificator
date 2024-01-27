@@ -1,4 +1,4 @@
-# Youtube Notifications Parser
+# Youtube Notificator
 Parse your Favorite Channels New Videos Titles Manually to your Notification System
  
  ## Requirements
